@@ -141,3 +141,10 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# macOS
+.DS_Store
+
+# Projektspezifisch: Laufzeitdaten des Tutors
+backend/src/data/*.db
+backend/src/data/currentProject.json

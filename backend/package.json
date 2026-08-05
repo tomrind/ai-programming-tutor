@@ -1,0 +1,27 @@
+{
+  "name": "ai-programming-tutor-backend",
+  "version": "0.1.0",
+  "description": "Lokaler KI-Tutor fuer Java-Programmieranfaenger in BlueJ",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [
+    "bluej",
+    "java",
+    "ollama",
+    "tutoring-system"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^4.22.2"
+  }
+}
