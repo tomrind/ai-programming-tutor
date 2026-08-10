@@ -20,8 +20,9 @@
     "node": ">=20"
   },
   "dependencies": {
+    "chokidar": "^5.0.0",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
-    "express": "^4.22.2"
+    "express": "^5.2.1"
   }
 }
