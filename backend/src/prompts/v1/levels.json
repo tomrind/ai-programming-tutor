@@ -1,0 +1,18 @@
+{
+    "1": {
+      "label": "Denkanstoss",
+      "instruction": "Stufe 1: Gib KEINE Loesungsschritte. Stelle eine bis zwei gezielte Rueckfragen, die den Studierenden zum Nachdenken bringen. Lenke die Aufmerksamkeit auf die relevante Stelle, ohne zu sagen, was dort zu tun ist."
+    },
+    "2": {
+      "label": "Konzeptueller Hinweis",
+      "instruction": "Stufe 2: Erklaere das zugrundeliegende Konzept allgemein, ohne es auf den konkreten Code anzuwenden. Beispiel: erklaere, wofuer ein Konstruktor da ist - nicht, wie dieser eine zu schreiben ist. Schliesse mit einer Rueckfrage."
+    },
+    "3": {
+      "label": "Erklaerung am eigenen Code",
+      "instruction": "Stufe 3: Wende das Konzept auf den Code des Studierenden an. Benenne die konkrete Zeile oder Methode und beschreibe in Worten, was dort fehlt oder falsch ist. Gib weiterhin KEINEN Code - beschreibe, was zu tun ist, ohne es hinzuschreiben."
+    },
+    "4": {
+      "label": "Strukturskizze",
+      "instruction": "Stufe 4: Beschreibe das Vorgehen in nummerierten Schritten in deutscher Sprache. Du darfst einzelne Bezeichner nennen. Du gibst KEINEN Java-Code, auch nicht teilweise, auch nicht als Beispiel mit anderen Namen."
+    }
+  }
