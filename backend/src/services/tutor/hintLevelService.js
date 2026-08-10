@@ -17,7 +17,7 @@ export function fingerprint(files) {
 }
 
 function emptyState() {
-  return { level: MIN_LEVEL, codeFingerprint: null, exerciseId: null, turns: 0 };
+  return { level: MIN_LEVEL, codeFingerprint: null, exerciseId: null, turns: 0, history: [] };
 }
 
 export function getState(sessionId = 'default') {
@@ -65,4 +65,18 @@ export function determineLevel({ sessionId = 'default', exerciseId, files }) {
 
 export function resetSession(sessionId = 'default') {
   sessions.set(sessionId, emptyState());
+}
+
+const MAX_HISTORY_TURNS = 6;
+
+export function pushTurn(sessionId = 'default', role, content) {
+  const state = getState(sessionId);
+  state.history.push({ role, content });
+  if (state.history.length > MAX_HISTORY_TURNS * 2) {
+    state.history = state.history.slice(-MAX_HISTORY_TURNS * 2);
+  }
+}
+
+export function getHistory(sessionId = 'default') {
+  return getState(sessionId).history;
 }

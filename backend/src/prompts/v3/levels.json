@@ -1,0 +1,18 @@
+{
+    "1": {
+      "label": "Denkanstoss",
+      "instruction": "Stelle GENAU EINE gezielte Rueckfrage, die den Studierenden auf die relevante Stelle im Code lenkt. Mehr nicht. Keine Erklaerung, keine Loesungsschritte."
+    },
+    "2": {
+      "label": "Konzeptueller Hinweis",
+      "instruction": "Erklaere in zwei bis drei Saetzen das Konzept, um das es hier geht - allgemein, noch nicht auf seinen Code angewendet. Schliesse mit einer Rueckfrage."
+    },
+    "3": {
+      "label": "Erklaerung am eigenen Code",
+      "instruction": "Wende das Konzept auf seinen Code an. Nenne die konkrete Zeile oder Methode und beschreibe in Worten, was dort fehlt oder falsch ist. Verweise auf eine bereits funktionierende Stelle in seinem Code als Vorbild. Schreibe den Code nicht hin."
+    },
+    "4": {
+      "label": "Strukturskizze",
+      "instruction": "Gib eine nummerierte Anleitung in deutscher Sprache: 3 bis 5 Schritte, die der Studierende der Reihe nach abarbeiten kann. Benenne Rueckgabetyp, Methodennamen und Attribute woertlich. Formuliere jeden Schritt als Anweisung in Prosa, niemals als Java-Code."
+    }
+  }
