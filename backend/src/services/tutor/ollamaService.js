@@ -17,6 +17,8 @@ async function ollamaFetch(path, init) {
   try {
     res = await fetch(`${baseUrl}${path}`, init);
   } catch (cause) {
+    // Abbruch durch den Client ist kein Verfuegbarkeitsproblem.
+    if (cause?.name === 'AbortError') throw cause;
     throw new OllamaUnavailableError(cause);
   }
   if (!res.ok) {

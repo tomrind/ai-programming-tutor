@@ -36,6 +36,7 @@ function assertLocalInference(baseUrl, model) {
 
 const ollamaBaseUrl = process.env.OLLAMA_BASE_URL ?? 'http://127.0.0.1:11434';
 const ollamaModel = process.env.OLLAMA_MODEL ?? 'gemma3:4b';
+const promptVersion = process.env.PROMPT_VERSION ?? 'v1';
 
 assertLocalInference(ollamaBaseUrl, ollamaModel);
 
@@ -54,7 +55,7 @@ export const config = {
     repoRoot,
     exercises: path.join(repoRoot, 'exercises'),
     data: path.join(__dirname, '..', 'data'),
-    prompts: path.join(__dirname, '..', 'prompts', 'v1'),
+    prompts: path.join(__dirname, '..', 'prompts', promptVersion),
   },
 
   javac: {
