@@ -56,4 +56,10 @@ export const config = {
     data: path.join(__dirname, '..', 'data'),
     prompts: path.join(__dirname, '..', 'prompts', 'v1'),
   },
+
+  javac: {
+    path: process.env.JAVAC_PATH ?? 'javac',
+    timeoutMs: Number(process.env.JAVAC_TIMEOUT_MS ?? 15000),
+  },
+  
 };
