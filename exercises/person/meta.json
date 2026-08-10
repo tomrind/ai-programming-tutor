@@ -1,0 +1,13 @@
+{
+  "id": "person",
+  "title": "Klasse Person",
+  "difficulty": 1,
+  "concepts": ["Klasse", "Attribut", "Konstruktor", "Methode", "Rueckgabewert"],
+  "learningGoals": [
+    "Eine Klasse mit privaten Attributen anlegen",
+    "Einen Konstruktor zur Initialisierung schreiben",
+    "Lesende und veraendernde Methoden unterscheiden"
+  ],
+  "expectedClasses": ["Person"],
+  "expectedMethods": ["getName", "getAlter", "hatGeburtstag", "beschreibung"]
+}
