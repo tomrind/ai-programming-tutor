@@ -1,6 +1,7 @@
 import { createApp } from './app.js';
 import { config } from './config/config.js';
 import { logger, setLogLevel } from './utils/logger.js';
+import { warmUp } from './services/tutor/ollamaService.js';
 
 setLogLevel(config.logLevel);
 
@@ -11,6 +12,7 @@ const app = createApp();
 app.listen(config.port, '127.0.0.1', () => {
   logger.info(`Backend laeuft auf http://127.0.0.1:${config.port}`);
   logger.info(`Modell: ${config.ollama.model} via ${config.ollama.baseUrl}`);
+  warmUp();
 });
 
 process.on('unhandledRejection', (reason) => {
