@@ -7,6 +7,7 @@ import healthRoutes from './routes/healthRoutes.js';
 import debugRoutes from './routes/debugRoutes.js';
 import projectRoutes from './routes/projectRoutes.js';
 import exerciseRoutes from './routes/exerciseRoutes.js';
+import tutorRoutes from './routes/tutorRoutes.js';
 
 export function createApp() {
   const app = express();
@@ -23,6 +24,7 @@ export function createApp() {
   app.use('/api', debugRoutes);
   app.use('/api', projectRoutes);
   app.use('/api', exerciseRoutes);
+  app.use('/api', tutorRoutes);
 
   app.use((req, res) => {
     res.status(404).json({ error: `Unbekannte Route: ${req.method} ${req.originalUrl}` });
