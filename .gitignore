@@ -148,3 +148,4 @@ vite.config.ts.timestamp-*
 # Projektspezifisch: Laufzeitdaten des Tutors
 backend/src/data/*.db
 backend/src/data/currentProject.json
+backend/src/data/currentExercise.json

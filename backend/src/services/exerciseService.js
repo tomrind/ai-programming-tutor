@@ -4,6 +4,8 @@ import path from 'node:path';
 import { config } from '../config/config.js';
 import { logger } from '../utils/logger.js';
 
+const STATE_FILE = path.join(config.paths.data, 'currentExercise.json');
+
 let currentId = null;
 
 export class ExerciseNotFoundError extends Error {
@@ -49,9 +51,15 @@ export async function listExercises() {
   return result.sort((a, b) => a.difficulty - b.difficulty);
 }
 
+async function persist() {
+  await fs.mkdir(config.paths.data, { recursive: true });
+  await fs.writeFile(STATE_FILE, JSON.stringify({ id: currentId }), 'utf8');
+}
+
 export async function selectExercise(id) {
   const exercise = await loadExercise(id);
   currentId = exercise.id;
+  await persist();
   logger.info(`Aufgabe gewaehlt: ${exercise.title}`);
   return exercise;
 }
@@ -69,4 +77,18 @@ export function toPromptSummary(exercise) {
     `Lernziele: ${(exercise.learningGoals ?? []).join('; ')}`,
     `Erwartete Methoden: ${(exercise.expectedMethods ?? []).join(', ')}`,
   ].join('\n');
+}
+
+/** Stellt beim Backend-Start die zuletzt gewaehlte Aufgabe wieder her. */
+export async function restoreExercise() {
+  try {
+    const { id } = JSON.parse(await fs.readFile(STATE_FILE, 'utf8'));
+    if (id) {
+      await loadExercise(id);
+      currentId = id;
+      logger.info(`Zuletzt gewaehlte Aufgabe wiederhergestellt: ${id}`);
+    }
+  } catch {
+    logger.debug('Keine gespeicherte Aufgabe gefunden');
+  }
 }
