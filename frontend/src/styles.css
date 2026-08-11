@@ -60,3 +60,10 @@ button:disabled { background: #a8b3c7; cursor: default; }
   .composer textarea { flex: 1; resize: none; padding: .5rem .6rem;
     border: 1px solid #c9cdd4; border-radius: 6px; font: inherit; }
   button.ghost { background: #eef1f6; color: #1b1c1f; }
+
+  .notice { display: flex; justify-content: space-between; align-items: center;
+    gap: .75rem; flex-wrap: wrap; margin: .7rem .9rem 0; padding: .55rem .75rem;
+    background: #fff8e6; border: 1px solid #f0d9a0; border-radius: 8px;
+    font-size: .85rem; }
+  .notice-actions { display: flex; gap: .4rem; }
+  .notice button { padding: .3rem .7rem; font-size: .8rem; }

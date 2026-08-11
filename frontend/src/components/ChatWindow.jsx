@@ -1,11 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 import { useChat } from '../hooks/useChat.js';
 import { HintLevelIndicator } from './HintLevelIndicator.jsx';
+import { useCodeEvents } from '../hooks/useCodeEvents.js';
+import { ErrorNotice } from './ErrorNotice.jsx';
 
 export function ChatWindow({ ready }) {
   const { messages, busy, level, send, stop, reset } = useChat();
   const [draft, setDraft] = useState('');
   const endRef = useRef(null);
+  const codeEvent = useCodeEvents();
+  const [dismissed, setDismissed] = useState(null);
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -30,6 +34,13 @@ export function ChatWindow({ ready }) {
           Neu beginnen
         </button>
       </div>
+
+      <ErrorNotice
+        event={codeEvent}
+        dismissedAt={dismissed}
+        onAsk={(q) => !busy && send(q)}
+        onDismiss={setDismissed}
+      />
 
       <div className="messages">
         {messages.length === 0 && (
