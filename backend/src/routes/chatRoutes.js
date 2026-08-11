@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import { buildContext } from '../services/tutor/contextService.js';
-import { buildSystemPrompt } from '../services/tutor/promptService.js';
+import { buildSystemPrompt, getLevelLabel } from '../services/tutor/promptService.js';
 import { chatStream } from '../services/tutor/ollamaService.js';
 import { determineLevel, pushTurn, getHistory }
   from '../services/tutor/hintLevelService.js';
@@ -34,7 +34,9 @@ router.post('/chat', async (req, res) => {
     });
 
     send('meta', {
-      level, reason,
+      level, 
+      levelLabel: await getLevelLabel(level),
+      reason,
       exercise: context.exercise?.title ?? null,
       compilerOk: context.compilation.compiled,
       errorCount: context.compilation.errorCount ?? 0,
