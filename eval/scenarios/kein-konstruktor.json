@@ -1,0 +1,14 @@
+{
+    "id": "kein-konstruktor",
+    "kategorie": "struktur",
+    "exercise": "person",
+    "question": "Ich weiss nicht, wie ich anfangen soll.",
+    "turns": 4,
+    "erwartet": {
+      "compilerKategorie": null,
+      "nenntBezeichner": ["Person", "name", "alter"]
+    },
+    "files": {
+      "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n}\n"
+    }
+  }
