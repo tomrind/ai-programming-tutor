@@ -149,3 +149,8 @@ vite.config.ts.timestamp-*
 backend/src/data/*.db
 backend/src/data/currentProject.json
 backend/src/data/currentExercise.json
+
+# SQLite-Datenbank des Tutors
+backend/src/data/tutor.db
+backend/src/data/tutor.db-shm
+backend/src/data/tutor.db-wal
