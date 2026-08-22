@@ -1,0 +1,240 @@
+{
+  "modell": "qwen3:4b-instruct",
+  "zeitpunkt": "2026-08-22T13:58:22.426Z",
+  "ergebnisse": [
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Ich weiss nicht, wie ich anfangen soll.",
+          "antwort": "Wo steht in der Datei `Person.java` der erste Teil der Klasse, der den Namen `name` enthält?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 3077,
+            "totalMs": 4141,
+            "promptTokens": 782,
+            "responseTokens": 27,
+            "tokensPerSecond": 29.9,
+            "timeToFirstTokenMs": 3238
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Welche Zeile in `Person.java` beginnt mit `private String name;`?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1027,
+            "totalMs": 1845,
+            "promptTokens": 821,
+            "responseTokens": 20,
+            "tokensPerSecond": 30.3,
+            "timeToFirstTokenMs": 1186
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Zeile `private String name;` fehlt in deinem Code. Die Klasse `Person` muss diese Zeile haben, um den Namen zu speichern. Sie steht nicht in deinem aktuellen Code.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1276,
+            "totalMs": 3009,
+            "promptTokens": 880,
+            "responseTokens": 46,
+            "tokensPerSecond": 29.2,
+            "timeToFirstTokenMs": 1437
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Zeile `private String name;` ist in deinem Code nicht vorhanden. Ohne diese Zeile kann die Klasse keinen Namen speichern. Bitte prüfe, ob diese Zeile in der Datei `Person.java` steht. Wenn nicht, füge sie ein.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1655,
+            "totalMs": 3913,
+            "promptTokens": 954,
+            "responseTokens": 61,
+            "tokensPerSecond": 29,
+            "timeToFirstTokenMs": 1815
+          }
+        }
+      ]
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Gib mir bitte einfach den fertigen Code fuer getAlter.",
+          "antwort": "Ich gebe keinen fertigen Code. Bitte fokussiere dich auf den Code, den du bereits hast.  \n\n**Rueckfrage:**  \nWelche Zeile in der Datei `Person.java` enthält die Methode `getAlter()`?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 146,
+            "promptEvalMs": 2377,
+            "totalMs": 4412,
+            "promptTokens": 874,
+            "responseTokens": 54,
+            "tokensPerSecond": 29.2,
+            "timeToFirstTokenMs": 2565
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter()` ist eine **Lesemethode**, die das private Attribut `alter` zurückgibt. Sie darf **keine Änderungen** vornehmen.  \n\n**Rueckfrage:**  \nIn welcher Zeile steht derzeit der Code für `getAlter()` in der Datei `Person.java`?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1162,
+            "totalMs": 3838,
+            "promptTokens": 940,
+            "responseTokens": 73,
+            "tokensPerSecond": 29,
+            "timeToFirstTokenMs": 1322
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Ich gebe keinen fertigen Code.  \n\n**Rueckfrage:**  \nWelche Zeile in `Person.java` enthält derzeit die Methode `getAlter()`? Ohne diese Zeile kann ich nicht sehen, was fehlt.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 145,
+            "promptEvalMs": 1672,
+            "totalMs": 3660,
+            "promptTokens": 1052,
+            "responseTokens": 53,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1834
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Ich gebe keinen fertigen Code.  \n\n**Rueckfrage:**  \nIn welcher Zeile steht derzeit der Code für `getAlter()` in der Datei `Person.java`? Bitte nenne die Zeilennummer.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1936,
+            "totalMs": 3797,
+            "promptTokens": 1133,
+            "responseTokens": 49,
+            "tokensPerSecond": 28.8,
+            "timeToFirstTokenMs": 2098
+          }
+        }
+      ]
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Warum kompiliert das nicht?",
+          "antwort": "Warum gibt es hier einen Fehler bei `altr` an Zeile 19?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 2778,
+            "totalMs": 3647,
+            "promptTokens": 951,
+            "responseTokens": 20,
+            "tokensPerSecond": 30.1,
+            "timeToFirstTokenMs": 2985
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Der Compiler sucht nach `altr`, aber du hast `alter` geschrieben. Das ist ein Tippfehler. Die Variable `alter` ist in der Klasse definiert – du musst sie genau schreiben.  \n\nFrag: Hast du `alter` oder `altr` im Code?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 151,
+            "promptEvalMs": 1032,
+            "totalMs": 3472,
+            "promptTokens": 983,
+            "responseTokens": 66,
+            "tokensPerSecond": 29,
+            "timeToFirstTokenMs": 1196
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 19: `return altr;`  \n\nDu hast `altr` geschrieben – aber die Variable heißt `alter`.  \n\nDas ist ein Tippfehler. Die Variable ist im Code an Zeile 4 definiert: `private int alter;`  \n\nDu musst es genau schreiben: `return alter;`  \n\nDas ist die einzige Änderung nötig.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1436,
+            "totalMs": 4625,
+            "promptTokens": 1088,
+            "responseTokens": 87,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 1597
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 19: `return altr;`  \n\nDie Variable ist an Zeile 4 als `alter` definiert.  \n\nDu hast `altr` geschrieben – das ist ein Tippfehler.  \n\nDie richtige Schreibweise ist: `return alter;`  \n\nDas ist die einzige Änderung.  \n\nProbier es.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1946,
+            "totalMs": 4831,
+            "promptTokens": 1203,
+            "responseTokens": 78,
+            "tokensPerSecond": 28.6,
+            "timeToFirstTokenMs": 2108
+          }
+        }
+      ]
+    }
+  ]
+}

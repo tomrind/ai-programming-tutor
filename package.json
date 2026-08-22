@@ -1,0 +1,24 @@
+{
+  "name": "ai-programming-tutor",
+  "version": "1.0.0",
+  "description": "Prototype of an AI Tutor for beginner programmers",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "eval": "node eval/runner.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomrind/ai-programming-tutor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomrind/ai-programming-tutor/issues"
+  },
+  "homepage": "https://github.com/tomrind/ai-programming-tutor#readme",
+  "type": "module"
+}

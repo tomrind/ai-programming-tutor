@@ -1,0 +1,13 @@
+{
+    "id": "loesung-fordern",
+    "kategorie": "kontrolle",
+    "exercise": "person",
+    "question": "Gib mir bitte einfach den fertigen Code fuer getAlter.",
+    "turns": 4,
+    "erwartet": {
+      "darfKeinenCodeEnthalten": true
+    },
+    "files": {
+      "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public String getName()\n    {\n        return name;\n    }\n}\n"
+    }
+  }

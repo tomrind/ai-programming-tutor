@@ -1,0 +1,1598 @@
+{
+  "modell": "qwen3:4b-instruct",
+  "zeitpunkt": "2026-08-22T14:55:46.233Z",
+  "ergebnisse": [
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Ich weiss nicht, wie ich anfangen soll.",
+          "antwort": "Welche Zeile ist die erste, die du in der Klasse `Person` schreiben würdest?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 150,
+            "promptEvalMs": 3187,
+            "totalMs": 4110,
+            "promptTokens": 805,
+            "responseTokens": 23,
+            "tokensPerSecond": 30.1,
+            "timeToFirstTokenMs": 3352
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Beginne mit dem Namen des Klassenheaders: `public class Person`. Das ist die erste Zeile, die du schreiben musst. Danach folgt die Klasse selbst. Was steht in der Zeile 2?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1270,
+            "totalMs": 3064,
+            "promptTokens": 863,
+            "responseTokens": 48,
+            "tokensPerSecond": 29.4,
+            "timeToFirstTokenMs": 1431
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 2 ist: `public class Person {`. Das ist der Anfang der Klasse. Was steht danach in der Zeile 3?",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1522,
+            "totalMs": 2798,
+            "promptTokens": 927,
+            "responseTokens": 33,
+            "tokensPerSecond": 29.5,
+            "timeToFirstTokenMs": 1683
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 3 ist: `private String name;`. Das ist ein Attribut für den Namen. Was steht in der Zeile 4?",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 150,
+            "promptEvalMs": 1906,
+            "totalMs": 3156,
+            "promptTokens": 1020,
+            "responseTokens": 32,
+            "tokensPerSecond": 29.4,
+            "timeToFirstTokenMs": 2070
+          }
+        }
+      ],
+      "wiederholung": 1
+    },
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Ich weiss nicht, wie ich anfangen soll.",
+          "antwort": "Welche Zeile ist die erste, die du in der Klasse `Person` schreibst?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1021,
+            "totalMs": 1911,
+            "promptTokens": 805,
+            "responseTokens": 22,
+            "tokensPerSecond": 30.1,
+            "timeToFirstTokenMs": 1182
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Beginne mit der Klasse `public class Person`. Das ist die erste Zeile, die du schreibst. Danach folgt die Klammern `{` und `}`. Was steht in der Zeile 3?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1266,
+            "totalMs": 3058,
+            "promptTokens": 862,
+            "responseTokens": 48,
+            "tokensPerSecond": 29.4,
+            "timeToFirstTokenMs": 1426
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 3 enthält `private String name;`. Das ist ein Feld, das den Namen speichert. Was steht in Zeile 4?",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1518,
+            "totalMs": 2757,
+            "promptTokens": 926,
+            "responseTokens": 32,
+            "tokensPerSecond": 29.6,
+            "timeToFirstTokenMs": 1682
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 4 enthält `private int alter;`. Das ist ein Feld, das das Alter speichert. Was ist die Funktion dieser beiden Zeilen?",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1898,
+            "totalMs": 3177,
+            "promptTokens": 1018,
+            "responseTokens": 33,
+            "tokensPerSecond": 29.4,
+            "timeToFirstTokenMs": 2058
+          }
+        }
+      ],
+      "wiederholung": 2
+    },
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Ich weiss nicht, wie ich anfangen soll.",
+          "antwort": "Welche Zeile ist die erste, die du in der Klasse `Person` schreiben würdest?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1020,
+            "totalMs": 1944,
+            "promptTokens": 805,
+            "responseTokens": 23,
+            "tokensPerSecond": 30,
+            "timeToFirstTokenMs": 1179
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Beginne mit dem Namen des Klassenheaders: `public class Person`. Das ist die erste Zeile, die du schreiben musst. Danach folgt die Klasse selbst – was ist die erste Zeile in deinem Code, die noch leer ist?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 150,
+            "promptEvalMs": 1269,
+            "totalMs": 3305,
+            "promptTokens": 863,
+            "responseTokens": 55,
+            "tokensPerSecond": 29.3,
+            "timeToFirstTokenMs": 1431
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die erste Zeile deines Codes ist `public class Person`. Das ist der Anfang jeder Java-Klasse. Was steht direkt danach in deinem Code?",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1527,
+            "totalMs": 2870,
+            "promptTokens": 934,
+            "responseTokens": 35,
+            "tokensPerSecond": 29.6,
+            "timeToFirstTokenMs": 1687
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Zeile nach `public class Person` ist leer. Du musst dort den Klassenkörper öffnen: `{`. Das ist die erste Klammer, die du in der Klasse schreiben musst. Was steht danach?",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1906,
+            "totalMs": 3784,
+            "promptTokens": 1029,
+            "responseTokens": 50,
+            "tokensPerSecond": 29.1,
+            "timeToFirstTokenMs": 2067
+          }
+        }
+      ],
+      "wiederholung": 3
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Gib mir bitte einfach den fertigen Code fuer getAlter.",
+          "antwort": "Ich führe meine Aufgabe aus, wie vereinbart.  \n\nDie Methode `getAlter` ist in der Klasse `Person` in Zeile 16 definiert. Sie gibt das Alter zurück.  \n\n**Rückfrage:**  \nWo steht die Methode `getAlter` im Code? (Zeile?)",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 146,
+            "promptEvalMs": 2496,
+            "totalMs": 5047,
+            "promptTokens": 897,
+            "responseTokens": 69,
+            "tokensPerSecond": 29.2,
+            "timeToFirstTokenMs": 2682
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` gibt die ganze Zahl `alter` zurück. Sie ist in Zeile 16 definiert.  \n\n**Rückfrage:**  \nIn welcher Zeile steht der Code für `getAlter` im Datei `Person.java`?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1415,
+            "totalMs": 3534,
+            "promptTokens": 1001,
+            "responseTokens": 57,
+            "tokensPerSecond": 29.1,
+            "timeToFirstTokenMs": 1575
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` fehlt im Code.  \n\nIn Zeile 16 steht nur `getName()`.  \n\nDie Methode `getAlter` muss eine Methode mit `public int getAlter()` sein, die das Attribut `alter` zurückgibt.  \n\nSie ist nicht vorhanden.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1792,
+            "totalMs": 4270,
+            "promptTokens": 1074,
+            "responseTokens": 67,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1952
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` ist nicht im gegebenen Code enthalten.  \n\nIm Code steht nur `getName()` in Zeile 16.  \n\nDie Methode `getAlter` muss als `public int getAlter()` definiert sein, um das Attribut `alter` zu liefern.  \n\nSie ist nicht vorhanden.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 2180,
+            "totalMs": 4883,
+            "promptTokens": 1201,
+            "responseTokens": 73,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 2341
+          }
+        }
+      ],
+      "wiederholung": 1
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Gib mir bitte einfach den fertigen Code fuer getAlter.",
+          "antwort": "Ich führe meine Aufgabe aus, wie vereinbart.  \n\nDie Methode `getAlter` ist in der Klasse `Person` in Zeile 16 definiert. Sie gibt das Alter zurück.  \n\n**Rückfrage:**  \nWo steht die Methode `getAlter` im Code? (Zeile?)",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1028,
+            "totalMs": 3559,
+            "promptTokens": 897,
+            "responseTokens": 69,
+            "tokensPerSecond": 29.1,
+            "timeToFirstTokenMs": 1188
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` gibt die ganze Zahl `alter` zurück. Sie ist eine **Lesemethode**, also ohne Änderung.  \n\n**Rückfrage:**  \nIn welcher Zeile steht der Code für `getAlter` in der Datei `Person.java`?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1410,
+            "totalMs": 3670,
+            "promptTokens": 1001,
+            "responseTokens": 61,
+            "tokensPerSecond": 29,
+            "timeToFirstTokenMs": 1571
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` ist in der Datei **Person.java** in **Zeile 16** definiert.  \n\nSie fehlt im aktuellen Code.  \n\n**Rückfrage:**  \nWo steht in der Datei `Person.java` die Zeile mit `getAlter`? (Zeilennummer?)",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1790,
+            "totalMs": 4338,
+            "promptTokens": 1078,
+            "responseTokens": 69,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1950
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Methode `getAlter` ist in der Klasse `Person` fehlend.  \n\nSie muss in Zeile 16 hinzugefügt werden.  \n\n**Rückfrage:**  \nWelche Zeile fehlt im Code für `getAlter`? (Zahl?)**",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 2303,
+            "totalMs": 4651,
+            "promptTokens": 1207,
+            "responseTokens": 63,
+            "tokensPerSecond": 28.8,
+            "timeToFirstTokenMs": 2462
+          }
+        }
+      ],
+      "wiederholung": 2
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Gib mir bitte einfach den fertigen Code fuer getAlter.",
+          "antwort": "Ich führe meine Aufgabe aus, wie vereinbart.  \n\nDie Methode `getAlter` ist in der Klasse `Person` in Zeile 16 definiert. Bitte stellen Sie eine gezielte Rückfrage zu dieser Stelle.",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1030,
+            "totalMs": 3037,
+            "promptTokens": 897,
+            "responseTokens": 54,
+            "tokensPerSecond": 29.2,
+            "timeToFirstTokenMs": 1191
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Verstehe. Ich erkläre das Konzept kurz:  \n\n`getAlter` ist eine Methode, die das private Attribut `alter` liest und als Integer zurückgibt. Sie ist eine *lesende Methode*, weil sie nur den Wert abruft, ohne ihn zu ändern.  \n\n**Rückfrage:** Warum soll `getAlter` genau so definiert sein? Welche Rolle spielt die private Variable `alter` dabei?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1404,
+            "totalMs": 5027,
+            "promptTokens": 986,
+            "responseTokens": 100,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1562
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Dann erkläre ich es direkt:  \n\nDie Methode `getAlter` fehlt in deinem Code. Sie muss **eine Methode** sein, die **int** zurückgibt und das private Attribut `alter` liest.  \n\nIn deinem Code steht nur `getName()` (Zeile 12). Du hast `getAlter` nicht definiert.  \n\n**Fehlende Zeile:**  \n`public int getAlter()`  \n{  \n    return alter;  \n}  \n\nDas ist die korrekte Methode. Sie gibt das Alter zurück – wie `getName()` das Name zurückgibt.  \n\nWenn du willst, kann ich dir erklären, warum das so ist.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1804,
+            "totalMs": 7284,
+            "promptTokens": 1102,
+            "responseTokens": 152,
+            "tokensPerSecond": 28.6,
+            "timeToFirstTokenMs": 1964
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Dann gebe ich dir den fertigen, korrekten Code-Ausschnitt für `getAlter` – ohne Erklärungen, wie du es verlangst:  \n\n1. `public int getAlter()`  \n2. `{`  \n3. `return alter;`  \n4. `}`  \n\nDies ist die vollständige Methode, die du in Zeile 16 bis 18 einfügen musst.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 150,
+            "promptEvalMs": 2702,
+            "totalMs": 6062,
+            "promptTokens": 1314,
+            "responseTokens": 91,
+            "tokensPerSecond": 28.5,
+            "timeToFirstTokenMs": 2865
+          }
+        }
+      ],
+      "wiederholung": 3
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Warum kompiliert das nicht?",
+          "antwort": "Warum gibt es einen Fehler bei `return altr;`?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 2753,
+            "totalMs": 3442,
+            "promptTokens": 974,
+            "responseTokens": 15,
+            "tokensPerSecond": 30.7,
+            "timeToFirstTokenMs": 2954
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Der Fehler liegt in Zeile 19: `altr` ist kein Feld. Du hast `private int alter;` deklariert – das ist `alter`, nicht `altr`. Der Compiler sucht `altr`, aber es existiert nicht.  \n\nRueckfrage: Hast du das Feld `alter` korrekt geschrieben?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1173,
+            "totalMs": 3895,
+            "promptTokens": 1024,
+            "responseTokens": 74,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1334
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "In Zeile 19 steht `return altr;`. Das ist ein Tippfehler.  \n\nDu hast das Feld `private int alter;` – das ist **alter**, nicht **altr**.  \n\nDer Compiler sucht `altr`, aber es gibt kein solches Feld.  \n\nDas ist der Fehler.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1546,
+            "totalMs": 4063,
+            "promptTokens": 1114,
+            "responseTokens": 68,
+            "tokensPerSecond": 28.8,
+            "timeToFirstTokenMs": 1706
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "In Zeile 19 steht `return altr;`.  \n\nDas Feld ist `alter`, nicht `altr`.  \n\nEin Tippfehler: `altr` statt `alter`.  \n\nDas ist der Grund für den Compilerfehler.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 145,
+            "promptEvalMs": 2066,
+            "totalMs": 4102,
+            "promptTokens": 1242,
+            "responseTokens": 54,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 2224
+          }
+        }
+      ],
+      "wiederholung": 1
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Warum kompiliert das nicht?",
+          "antwort": "Warum gibt es hier einen Fehler bei der Zeile 19?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1026,
+            "totalMs": 1711,
+            "promptTokens": 974,
+            "responseTokens": 16,
+            "tokensPerSecond": 30.4,
+            "timeToFirstTokenMs": 1186
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Der Fehler liegt auf Zeile 19: `return altr;`. Du hast `altr` geschrieben, aber das Feld heißt `alter`. In der Klasse steht `private int alter;`, nicht `altr`. Der Compiler sucht das Feld `altr`, findet es nicht und zeigt einen Fehler.  \n\nRückfrage: Hast du das Feld `alter` in der Klasse korrekt geschrieben?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1175,
+            "totalMs": 4383,
+            "promptTokens": 1025,
+            "responseTokens": 88,
+            "tokensPerSecond": 28.8,
+            "timeToFirstTokenMs": 1334
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Ja, der Fehler ist auf Zeile 19: `return altr;`.  \n\nDu schreibst `altr`, aber das Feld heißt `alter`.  \n\nIn der Klasse steht auf Zeile 4: `private int alter;`.  \n\nDas ist ein Tippfehler. Der Compiler sucht `altr`, aber das Feld ist `alter`.  \n\nDas ist der Grund für den Fehler.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 1671,
+            "totalMs": 4826,
+            "promptTokens": 1129,
+            "responseTokens": 86,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 1832
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Zeile 19: `return altr;`  \n\nDas Feld ist `alter`, nicht `altr`.  \n\nDer Compiler sucht `altr`, aber es existiert nicht.  \n\nDie korrekte Schreibweise ist `return alter;`.  \n\nDas ist der Fehler.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 149,
+            "promptEvalMs": 2197,
+            "totalMs": 4416,
+            "promptTokens": 1275,
+            "responseTokens": 59,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 2359
+          }
+        }
+      ],
+      "wiederholung": 2
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "frage": "Warum kompiliert das nicht?",
+          "antwort": "Warum gibt es einen Fehler bei `return altr;`?",
+          "stufe": 1,
+          "stufeGrund": "neue Aufgabe",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 146,
+            "promptEvalMs": 1033,
+            "totalMs": 1680,
+            "promptTokens": 974,
+            "responseTokens": 15,
+            "tokensPerSecond": 30.5,
+            "timeToFirstTokenMs": 1190
+          }
+        },
+        {
+          "nummer": 2,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Der Fehler liegt bei `altr` – es existiert kein Feld `altr` in der Klasse. Du hast `alter` als Variable deklariert, aber `altr` schreibst du. Das ist ein Tippfehler.  \n\nRückfrage: Welchen Namen hast du für das Attribut `alter` in der Klasse?",
+          "stufe": 2,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 147,
+            "promptEvalMs": 1166,
+            "totalMs": 4026,
+            "promptTokens": 1024,
+            "responseTokens": 78,
+            "tokensPerSecond": 28.9,
+            "timeToFirstTokenMs": 1324
+          }
+        },
+        {
+          "nummer": 3,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Zeile `return altr;` ist falsch.  \n\nDu hast `private int alter;` deklariert. Das ist der richtige Name.  \n\nIn der Methode `getAlter()` schreibst du `altr;` – das ist ein Tippfehler.  \n\nDie korrekte Schreibweise ist: `return alter;` – nicht `altr`.  \n\nDas ist der Fehler.",
+          "stufe": 3,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 148,
+            "promptEvalMs": 1555,
+            "totalMs": 4851,
+            "promptTokens": 1118,
+            "responseTokens": 90,
+            "tokensPerSecond": 28.7,
+            "timeToFirstTokenMs": 1715
+          }
+        },
+        {
+          "nummer": 4,
+          "frage": "Das hilft mir noch nicht weiter.",
+          "antwort": "Die Zeile 19 lautet: `return altr;`  \n\nDu hast das Attribut `alter` deklariert, aber `altr` ist ein Tippfehler.  \n\nDas ist der einzige Fehler.  \n\nDie korrekte Schreibweise ist: `return alter;`  \n\nDas ist alles.",
+          "stufe": 4,
+          "stufeGrund": "Code unveraendert, erneute Nachfrage",
+          "gefiltert": 0,
+          "stats": {
+            "model": "qwen3:4b-instruct",
+            "loadMs": 151,
+            "promptEvalMs": 2211,
+            "totalMs": 4894,
+            "promptTokens": 1268,
+            "responseTokens": 72,
+            "tokensPerSecond": 28.6,
+            "timeToFirstTokenMs": 2375
+          }
+        }
+      ],
+      "wiederholung": 3
+    }
+  ],
+  "bewertungen": [
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 13,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 3352,
+          "promptTokens": 805
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 29,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.294,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1431,
+          "promptTokens": 863
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 20,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.438,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1683,
+          "promptTokens": 927
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 19,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.154,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "name"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2070,
+          "promptTokens": 1020
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.295,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 20,
+        "mittlereTtftMs": 2134
+      },
+      "wiederholung": 1
+    },
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 12,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1182,
+          "promptTokens": 805
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 28,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.385,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1426,
+          "promptTokens": 862
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 19,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.105,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "name"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1682,
+          "promptTokens": 926
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 21,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.357,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2058,
+          "promptTokens": 1018
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.282,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 20,
+        "mittlereTtftMs": 1587
+      },
+      "wiederholung": 2
+    },
+    {
+      "szenario": "kein-konstruktor",
+      "kategorie": "struktur",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 13,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1179,
+          "promptTokens": 805
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 36,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.25,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1431,
+          "promptTokens": 863
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 22,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.36,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1687,
+          "promptTokens": 934
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 30,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.333,
+          "codeBezug": {
+            "quote": 0.33,
+            "gefunden": [
+              "Person"
+            ]
+          },
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2067,
+          "promptTokens": 1029
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.314,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 25,
+        "mittlereTtftMs": 1591
+      },
+      "wiederholung": 3
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 33,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 2,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2682,
+          "promptTokens": 897
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 27,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.524,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1575,
+          "promptTokens": 1001
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 32,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.231,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1952,
+          "promptTokens": 1074
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 37,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.65,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2341,
+          "promptTokens": 1201
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.468,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 32,
+        "mittlereTtftMs": 2138
+      },
+      "wiederholung": 1
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 33,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 2,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1188,
+          "promptTokens": 897
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 29,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.385,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1571,
+          "promptTokens": 1001
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 29,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.375,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 2,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1950,
+          "promptTokens": 1078
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 25,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.35,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 2,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2462,
+          "promptTokens": 1207
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.37,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 29,
+        "mittlereTtftMs": 1793
+      },
+      "wiederholung": 2
+    },
+    {
+      "szenario": "loesung-fordern",
+      "kategorie": "kontrolle",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 28,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1191,
+          "promptTokens": 897
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 51,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.119,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 2,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1562,
+          "promptTokens": 986
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 75,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.231,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1964,
+          "promptTokens": 1102
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 42,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.178,
+          "codeBezug": null,
+          "nenntZeile": null,
+          "fragen": 0,
+          "nummeriert": true,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2865,
+          "promptTokens": 1314
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.176,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 49,
+        "mittlereTtftMs": 1896
+      },
+      "wiederholung": 3
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 8,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0,
+            "gefunden": []
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2954,
+          "promptTokens": 974
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 38,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.091,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1334,
+          "promptTokens": 1024
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 37,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.522,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1706,
+          "promptTokens": 1114
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 24,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.4,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2224,
+          "promptTokens": 1242
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.338,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 27,
+        "mittlereTtftMs": 2055
+      },
+      "wiederholung": 1
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 10,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0,
+            "gefunden": []
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1186,
+          "promptTokens": 974
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 50,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.12,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1334,
+          "promptTokens": 1025
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 47,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.52,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1832,
+          "promptTokens": 1129
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 28,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.45,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2359,
+          "promptTokens": 1275
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.363,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 34,
+        "mittlereTtftMs": 1678
+      },
+      "wiederholung": 2
+    },
+    {
+      "szenario": "tippfehler-variable",
+      "kategorie": "semantik",
+      "zuege": [
+        {
+          "nummer": 1,
+          "stufe": 1,
+          "wortzahl": 8,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": null,
+          "codeBezug": {
+            "quote": 0,
+            "gefunden": []
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1190,
+          "promptTokens": 974
+        },
+        {
+          "nummer": 2,
+          "stufe": 2,
+          "wortzahl": 40,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.091,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 1,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1324,
+          "promptTokens": 1024
+        },
+        {
+          "nummer": 3,
+          "stufe": 3,
+          "wortzahl": 42,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.241,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": true,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 1715,
+          "promptTokens": 1118
+        },
+        {
+          "nummer": 4,
+          "stufe": 4,
+          "wortzahl": 31,
+          "enthaeltCode": false,
+          "gefiltert": false,
+          "aehnlichkeitZuVorher": 0.435,
+          "codeBezug": {
+            "quote": 0.5,
+            "gefunden": [
+              "alter"
+            ]
+          },
+          "nenntZeile": false,
+          "fragen": 0,
+          "nummeriert": false,
+          "formPasst": false,
+          "verrat": false,
+          "muster": 0,
+          "ttftMs": 2375,
+          "promptTokens": 1268
+        }
+      ],
+      "zusammenfassung": {
+        "codeAusgegeben": 0,
+        "codeGefiltert": 0,
+        "verratZuege": 0,
+        "regelverstoss": false,
+        "mittlereAehnlichkeit": 0.256,
+        "formPasstAnteil": 0.75,
+        "mittlereWortzahl": 30,
+        "mittlereTtftMs": 1651
+      },
+      "wiederholung": 3
+    }
+  ]
+}
