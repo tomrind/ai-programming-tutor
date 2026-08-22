@@ -10,6 +10,7 @@ import exerciseRoutes from './routes/exerciseRoutes.js';
 import tutorRoutes from './routes/tutorRoutes.js';
 import chatRoutes from './routes/chatRoutes.js';
 import eventRoutes from './routes/eventRoutes.js';
+import evalRoutes from './routes/evalRoutes.js';
 
 export function createApp() {
   const app = express();
@@ -29,6 +30,7 @@ export function createApp() {
   app.use('/api', tutorRoutes);
   app.use('/api', chatRoutes);
   app.use('/api', eventRoutes);
+  app.use('/api', evalRoutes);
 
   app.use((req, res) => {
     res.status(404).json({ error: `Unbekannte Route: ${req.method} ${req.originalUrl}` });

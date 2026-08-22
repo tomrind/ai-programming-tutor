@@ -8,6 +8,8 @@ import { determineLevel, pushTurn, getHistory }
 import { filterResponse } from '../services/tutor/responseFilterService.js';
 import { createStreamGuard } from '../services/tutor/streamGuard.js';
 import { logger } from '../utils/logger.js';
+import { recordRun } from '../repositories/runRepository.js';
+import { fingerprint, getState } from '../services/tutor/hintLevelService.js';
 
 const router = Router();
 
@@ -47,13 +49,14 @@ router.post('/chat', async (req, res) => {
 
     let shown = '';
     let filteredCount = 0;
+    const filterReasons = [];
 
     const guard = createStreamGuard({
       onEmit: (text) => { shown += text; send('token', { text }); },
       onBlock: (block) => {
         const result = filterResponse(block, { level, exercise: context.exercise });
         shown += result.text;
-        if (result.wasFiltered) filteredCount += result.removedBlocks;
+        if (result.wasFiltered) filteredCount += result.removedBlocks; filterReasons.push(...result.reasons);
         send('token', { text: result.text, filtered: result.wasFiltered });
       },
     });
@@ -68,6 +71,33 @@ router.post('/chat', async (req, res) => {
 
     pushTurn('default', 'user', question);
     pushTurn('default', 'assistant', shown);
+
+    const errors = (context.compilation.diagnostics ?? [])
+      .filter((d) => d.severity === 'error');
+
+    try {
+      recordRun({
+        source: 'chat',
+        exerciseId: context.exercise?.id ?? null,
+        turnIndex: getState().turns,
+        level,
+        levelReason: reason,
+        question,
+        answer: shown,
+        filteredBlocks: filteredCount,
+        filterReasons,
+        compilerOk: context.compilation.compiled,
+        errorCount: errors.length,
+        errorCategories: [...new Set(errors.map((e) => e.id))],
+        codeFingerprint: fingerprint(context.files),
+        codeSnapshot: JSON.stringify(
+          context.files.map((f) => ({ path: f.path, content: f.content }))
+        ),
+        stats,
+      });
+    } catch (err) {
+      logger.warn(`Protokollierung fehlgeschlagen: ${err.message}`);
+    }
 
     logger.info('Antwort erzeugt', { level, filteredCount, ...stats });
     send('done', { level, filteredCount, stats });
