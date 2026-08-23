@@ -1,0 +1,16 @@
+{
+  "turns": 4,
+  "id": "this-vergessen",
+  "kategorie": "struktur",
+  "exercise": "person",
+  "question": "Der Name bleibt immer leer, obwohl ich ihn uebergebe. Warum?",
+  "erwartet": {
+    "nenntBezeichner": [
+      "name",
+      "this"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        name = name;\n        alter = alter;\n    }\n}\n"
+  }
+}

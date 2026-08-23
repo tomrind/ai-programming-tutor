@@ -1,0 +1,17 @@
+{
+  "turns": 4,
+  "id": "rueckgabetyp-void",
+  "kategorie": "syntax",
+  "exercise": "person",
+  "question": "Meine Methode gibt nichts zurueck, obwohl ein return drinsteht.",
+  "erwartet": {
+    "nenntBezeichner": [
+      "getAlter",
+      "void",
+      "int"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public void getAlter()\n    {\n        return alter;\n    }\n}\n"
+  }
+}

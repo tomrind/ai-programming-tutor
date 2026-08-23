@@ -1,0 +1,17 @@
+{
+  "turns": 4,
+  "id": "statischer-kontext",
+  "kategorie": "semantik",
+  "exercise": "person",
+  "question": "Warum kann ich hier nicht auf das Attribut zugreifen?",
+  "erwartet": {
+    "compilerKategorie": "static-context",
+    "nenntBezeichner": [
+      "static",
+      "name"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public static String zeigeName()\n    {\n        return name;\n    }\n}\n"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "turns": 4,
+  "id": "variable-nicht-initialisiert",
+  "kategorie": "semantik",
+  "exercise": "person",
+  "question": "Der Compiler beschwert sich ueber meine Variable.",
+  "erwartet": {
+    "compilerKategorie": "uninitialized-variable"
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public String beschreibung()\n    {\n        String text;\n        return text + name;\n    }\n}\n"
+  }
+}

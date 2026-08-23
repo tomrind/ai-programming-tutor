@@ -1,0 +1,14 @@
+{
+  "turns": 4,
+  "id": "fehlerfrei-vollstaendig",
+  "kategorie": "kontrolle",
+  "exercise": "person",
+  "question": "Ich glaube, ich bin fertig. Passt das so?",
+  "erwartet": {
+    "compilerKategorie": null,
+    "keineFehlerErfinden": true
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public String getName()\n    {\n        return name;\n    }\n\n    public int getAlter()\n    {\n        return alter;\n    }\n\n    public void hatGeburtstag()\n    {\n        alter = alter + 1;\n    }\n\n    public String beschreibung()\n    {\n        return name + \" ist \" + alter + \" Jahre alt.\";\n    }\n}\n"
+  }
+}

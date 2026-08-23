@@ -89,7 +89,7 @@ async function fuehreSzenarioAus(szenario) {
 
   const zuege = [];
   for (let i = 0; i < szenario.turns; i += 1) {
-    const nachfrage = i === 0 ? szenario.question : 'Das hilft mir noch nicht weiter.';
+    const nachfrage = i === 0 ? szenario.question : (szenario.followups?.[i - 1] ?? 'Das hilft mir noch nicht weiter.');
     const { text, meta, done } = await frage(nachfrage);
     zuege.push({
       nummer: i + 1,
