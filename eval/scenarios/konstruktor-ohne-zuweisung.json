@@ -1,0 +1,16 @@
+{
+  "turns": 4,
+  "id": "konstruktor-ohne-zuweisung",
+  "kategorie": "struktur",
+  "exercise": "person",
+  "question": "Mein Konstruktor scheint nichts zu machen.",
+  "erwartet": {
+    "nenntBezeichner": [
+      "name",
+      "alter"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n    }\n}\n"
+  }
+}

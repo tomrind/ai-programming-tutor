@@ -1,0 +1,16 @@
+{
+  "turns": 4,
+  "id": "off-by-one",
+  "kategorie": "logik",
+  "exercise": "ticketautomat",
+  "question": "Die letzte Zahl fehlt in meiner Ausgabe.",
+  "erwartet": {
+    "nenntBezeichner": [
+      "zaehleBis",
+      "grenze"
+    ]
+  },
+  "files": {
+    "Ticketautomat.java": "public class Ticketautomat\n{\n    private int preis;\n\n    public Ticketautomat(int preis)\n    {\n        this.preis = preis;\n    }\n\n    public void zaehleBis(int grenze)\n    {\n        for (int i = 1; i < grenze; i++)\n        {\n            System.out.println(i);\n        }\n    }\n}\n"
+  }
+}

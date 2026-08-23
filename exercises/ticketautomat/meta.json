@@ -1,0 +1,13 @@
+{
+  "id": "ticketautomat",
+  "title": "Klasse Ticketautomat",
+  "difficulty": 2,
+  "concepts": ["Klasse", "Attribut", "Konstruktor", "Methode", "Schleife", "Bedingung"],
+  "learningGoals": [
+    "Zustand eines Objekts ueber mehrere Methodenaufrufe veraendern",
+    "Zaehlschleifen korrekt begrenzen",
+    "Bedingungen zur Pruefung von Eingaben einsetzen"
+  ],
+  "expectedClasses": ["Ticketautomat"],
+  "expectedMethods": ["geldEinwerfen", "ticketDrucken", "zaehleBis"]
+}

@@ -1,0 +1,13 @@
+{
+  "turns": 4,
+  "id": "klammer-zu-frueh",
+  "kategorie": "syntax",
+  "exercise": "person",
+  "question": "Ich bekomme eine Fehlermeldung, die ich nicht verstehe.",
+  "erwartet": {
+    "compilerKategorie": "brace-mismatch"
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n    }\n}\n\n    public String getName()\n    {\n        return name;\n    }\n"
+  }
+}

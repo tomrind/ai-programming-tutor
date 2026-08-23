@@ -1,0 +1,16 @@
+{
+  "turns": 4,
+  "id": "string-vergleich",
+  "kategorie": "semantik",
+  "exercise": "person",
+  "question": "Der Vergleich liefert immer false, obwohl die Namen gleich sind.",
+  "erwartet": {
+    "nenntBezeichner": [
+      "equals",
+      "name"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n    private String name;\n    private int alter;\n\n    public Person(String name, int alter)\n    {\n        this.name = name;\n        this.alter = alter;\n    }\n\n    public boolean heisstWie(String anderer)\n    {\n        return name == anderer;\n    }\n}\n"
+  }
+}

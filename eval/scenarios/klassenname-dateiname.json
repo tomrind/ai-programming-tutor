@@ -1,0 +1,16 @@
+{
+  "turns": 4,
+  "id": "klassenname-dateiname",
+  "kategorie": "struktur",
+  "exercise": "person",
+  "question": "Das laesst sich nicht uebersetzen, ich verstehe die Meldung nicht.",
+  "erwartet": {
+    "compilerKategorie": "class-filename-mismatch",
+    "nenntBezeichner": [
+      "Person"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Mensch\n{\n    private String name;\n}\n"
+  }
+}

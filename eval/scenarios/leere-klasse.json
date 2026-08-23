@@ -1,0 +1,15 @@
+{
+  "turns": 4,
+  "id": "leere-klasse",
+  "kategorie": "struktur",
+  "exercise": "person",
+  "question": "Ich habe die Klasse angelegt, weiss aber nicht, wie es weitergeht.",
+  "erwartet": {
+    "nenntBezeichner": [
+      "Person"
+    ]
+  },
+  "files": {
+    "Person.java": "public class Person\n{\n}\n"
+  }
+}
