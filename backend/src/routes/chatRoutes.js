@@ -10,6 +10,7 @@ import { createStreamGuard } from '../services/tutor/streamGuard.js';
 import { logger } from '../utils/logger.js';
 import { recordRun } from '../repositories/runRepository.js';
 import { fingerprint, getState } from '../services/tutor/hintLevelService.js';
+import { filterResponse, filterInline } from '../services/tutor/responseFilterService.js';
 
 const router = Router();
 
@@ -58,6 +59,15 @@ router.post('/chat', async (req, res) => {
         shown += result.text;
         if (result.wasFiltered) filteredCount += result.removedBlocks; filterReasons.push(...result.reasons);
         send('token', { text: result.text, filtered: result.wasFiltered });
+      },
+      onInline: (span) => {
+        const result = filterInline(span, { files: context.files });
+        shown += result.text;
+        if (result.filtered) {
+          filteredCount += 1;
+          filterReasons.push(result.reason);
+        }
+        send('token', { text: result.text, filtered: result.filtered });
       },
     });
 
