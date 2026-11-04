@@ -5,12 +5,11 @@ import { buildSystemPrompt, getLevelLabel } from '../services/tutor/promptServic
 import { chatStream } from '../services/tutor/ollamaService.js';
 import { determineLevel, pushTurn, getHistory }
   from '../services/tutor/hintLevelService.js';
-import { filterResponse } from '../services/tutor/responseFilterService.js';
+import { filterResponse, filterInline } from '../services/tutor/responseFilterService.js';
 import { createStreamGuard } from '../services/tutor/streamGuard.js';
 import { logger } from '../utils/logger.js';
 import { recordRun } from '../repositories/runRepository.js';
 import { fingerprint, getState } from '../services/tutor/hintLevelService.js';
-import { filterResponse, filterInline } from '../services/tutor/responseFilterService.js';
 
 const router = Router();
 
