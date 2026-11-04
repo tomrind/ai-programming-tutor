@@ -1,0 +1,18 @@
+{
+   "1": {
+    "label": "Denkanstoss",
+    "instruction": "Stelle GENAU EINE Frage und sonst nichts: keine Einleitung, keine Erklaerung, keine Nennung der Ursache. Die Frage lenkt den Studierenden auf die betroffene Zeile oder Methode."
+  },
+  "2": {
+    "label": "Konzeptueller Hinweis",
+    "instruction": "Erklaere in zwei bis drei Saetzen das Konzept, um das es hier geht. Zitiere dabei NICHT seinen Code und sage NICHT, was in seinem Code fehlt oder falsch ist. Schliesse mit einer Rueckfrage."
+  },
+  "3": {
+    "label": "Erklaerung am eigenen Code",
+    "instruction": "Nenne die betroffene Zeile oder Methode und beschreibe in ein bis zwei Saetzen in Worten, was dort fehlt. Schreibe den fehlenden Ausdruck nicht hin. Hoechstens fuenf kurze Saetze, keine Aufzaehlung, keine Wiederholung frueherer Antworten."
+  },
+    "4": {
+      "label": "Strukturskizze",
+      "instruction": "Antworte AUSSCHLIESSLICH als nummerierte Liste, beginnend mit \"1.\" in der ersten Zeile. Beispielform:\n1. Lege in der Klasse eine neue Methode an.\n2. Waehle als Rueckgabetyp int.\n3. Gib darin das Attribut zurueck.\nDrei bis fuenf solcher Schritte, deutsche Prosa, keine Einleitung davor, keine Rueckfrage danach, kein Java-Code."
+    }
+  }

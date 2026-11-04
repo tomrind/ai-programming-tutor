@@ -5,7 +5,7 @@ import { buildSystemPrompt, getLevelLabel } from '../services/tutor/promptServic
 import { chatStream } from '../services/tutor/ollamaService.js';
 import { determineLevel, pushTurn, getHistory }
   from '../services/tutor/hintLevelService.js';
-import { filterResponse } from '../services/tutor/responseFilterService.js';
+import { filterResponse, filterInline } from '../services/tutor/responseFilterService.js';
 import { createStreamGuard } from '../services/tutor/streamGuard.js';
 import { logger } from '../utils/logger.js';
 import { recordRun } from '../repositories/runRepository.js';
@@ -58,6 +58,15 @@ router.post('/chat', async (req, res) => {
         shown += result.text;
         if (result.wasFiltered) filteredCount += result.removedBlocks; filterReasons.push(...result.reasons);
         send('token', { text: result.text, filtered: result.wasFiltered });
+      },
+      onInline: (span) => {
+        const result = filterInline(span, { files: context.files });
+        shown += result.text;
+        if (result.filtered) {
+          filteredCount += 1;
+          filterReasons.push(result.reason);
+        }
+        send('token', { text: result.text, filtered: result.filtered });
       },
     });
 

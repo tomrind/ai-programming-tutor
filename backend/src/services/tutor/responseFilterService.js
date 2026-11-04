@@ -65,3 +65,24 @@ export function filterResponse(text, { level, exercise }) {
 
   return { text: filtered, removedBlocks: removed, reasons, wasFiltered: removed > 0 };
 }
+
+const ANWEISUNG = /[;{}=]|\+\+|--|^return\b/;
+const normal = (s) => s.replace(/\s+/g, ' ').trim();
+
+/**
+ * Prueft einen Inline-Code-Abschnitt (`...`). Bezeichner, Typen und
+ * Signaturen bleiben erlaubt. Anweisungen (mit ; { } = ++ oder return)
+ * sind nur erlaubt, wenn sie woertlich im Code des Studierenden stehen:
+ * dann zitiert der Tutor nur, statt etwas vorzugeben.
+ */
+export function filterInline(span, { files = [] }) {
+  const inner = normal(span.slice(1, -1));
+  if (!ANWEISUNG.test(inner)) return { text: span, filtered: false };
+
+  if (files.some((f) => normal(f.content).includes(inner))) {
+    return { text: span, filtered: false };
+  }
+
+  logger.warn(`Antwortfilter: Inline-Code entfernt (${inner.slice(0, 60)})`);
+  return { text: '`…`', filtered: true, reason: 'Anweisung als Inline-Code' };
+}
